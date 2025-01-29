@@ -59,7 +59,7 @@ exports.getAll = async (req, res) => {
 
 exports.getOne = async (req, res) => {
     try {
-        const oneBook = await BooksTable.findByPK(req.body)
+        const oneBook = await BooksTable.findByPK(req.params.id)
 
         if (!BooksTable) {
             return res.status(404).json('book not found')
