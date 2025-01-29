@@ -7,6 +7,7 @@ router.post('/createBulk',bulkBook);
 
 router.get('/getallbook',getAll);
 
+
 router.get('/getOnebook/:id', getOne);
 
 router.get('/getOnebooks/', getByGenre);
