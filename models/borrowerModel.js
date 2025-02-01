@@ -2,7 +2,7 @@
 const {
   Model
 } = require('sequelize');
-const bookstable = require('./bookstable');
+const bookstable = require('./bookModel');
 const { FOREIGNKEYS } = require('sequelize/lib/query-types');
 module.exports = (sequelize, DataTypes) => {
   class BorrowersTable extends Model {

@@ -3,7 +3,7 @@ const borrowRouter = require("express").Router()
 const {createBorrower,bulkBorrow,getAllBorrowers,getBorrowerById,updateBorrower,deleteBorrower} = 
 require('../controllers/borrowerController');
 
-borrowRouter.post('/createBorrower',createBorrower);
+borrowRouter.post('/createBorrower/:params',createBorrower);
 
 borrowRouter.post('/createBulkBorrow',bulkBorrow);
 
